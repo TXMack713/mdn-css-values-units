@@ -2,6 +2,8 @@ html,
 body {
   margin: 0;
   padding: 0;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
   box-sizing: border-box;
   overflow: auto;
   word-break: break-all;
@@ -9,23 +11,48 @@ body {
 }
 
 *,
-*::after,
-*::before {
+*:before,
+*:after {
   box-sizing: inherit;
 }
 
-.hex {
+.task1 .hex {
   background-color: #86defa;
 }
 
-.rgb {
-  background-color: rgb(125, 125, 255);
+.task1 .rgb {
+  background-color: rgb(200, 145, 225);
 }
 
-.hsl {
-  background-color: hsl(320, 88%, 45%);
+.task1 .hsl {
+  background-color: hsl(288, 83%, 24%);
 }
 
-.transparency {
-  background-color: rgba(240, 120, 60, 0.2);
+.task1 .transparency {
+  background-color: rgba(100, 188, 175, 0.75);
+}
+
+.task2 h1 {
+  font-size: 50px;
+}
+
+.task2 h2 {
+  font-size: 2em;
+}
+
+.task2 p {
+  font-size: 16px;
+}
+
+.task2 h1 + p {
+  font-size: 120%;
+}
+.task3 .box {
+  background-image: url(https://cdn.stocksnap.io/img-thumbs/960w/wooden-wall_OT0M0U61ME.jpg);
+  background-repeat: no-repeat;
+  background-position: center 20%;
+  background-size: contain;
+  inline-size: 300px;
+  block-size: 200px;
+  border: 2px solid lightblue;
 }
